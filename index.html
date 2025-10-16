@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijdschema Klassen Ophalen | Schoolverkiezingen 27 oktober</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: De applicatie is ontworpen als een statische, informatieve pagina met als enig doel het weergeven van het ophaalschema. Een dashboard- of filterstructuur is overbodig. Een duidelijke kop gevolgd door een enkele, goed leesbare tabel is de meest efficiënte en gebruiksvriendelijke structuur om deze specifieke informatie over te brengen. -->
+    <!-- Visualization & Content Choices: Report Info: Tijdschema klassen ophalen -> Goal: Informeren -> Viz/Presentation: Statische HTML tabel -> Interaction: Geen. Justification: Een tabel is de meest directe en universeel begrepen methode om een rooster weer te geven. Omdat de enige vereiste is om het schema te tonen, zijn interactieve elementen of visualisaties niet nodig en zouden ze alleen maar afleiden. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8;
+            color: #383838;
+        }
+        th {
+            background-color: #F5DEB3; /* Wheat */
+        }
+        tr:nth-child(even) {
+            background-color: #FFF8F0;
+        }
+        .pauze-row {
+            background-color: #A0522D !important; /* Sienna */
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#A0522D]">Tijdschema Klassen Ophalen</h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-2">Schoolverkiezingen - Vrijdag 27 oktober</p>
+        </header>
+
+        <main class="bg-white p-6 rounded-xl shadow-lg border border-tan-200 overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="p-3 font-semibold text-sm text-[#A0522D] uppercase tracking-wider">Lesuur</th>
+                        <th class="p-3 font-semibold text-sm text-[#A0522D] uppercase tracking-wider">Tijdslot</th>
+                        <th class="p-3 font-semibold text-sm text-[#A0522D] uppercase tracking-wider">Ophaal-Duo 1 haalt op:</th>
+                        <th class="p-3 font-semibold text-sm text-[#A0522D] uppercase tracking-wider">Ophaal-Duo 2 haalt op:</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr><td colspan="4" class="p-2 font-bold text-gray-700 bg-gray-100">2e Lesuur (09:15 - 10:15)</td></tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">09:15 - 09:35</td>
+                        <td class="p-3"><strong>DV5a</strong> (uit lokaal 107 & 108)</td>
+                        <td class="p-3"><strong>DH4a</strong> (uit lokaal 105)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">09:35 - 09:55</td>
+                        <td class="p-3"><strong>DV4a</strong> (uit lokaal 104)</td>
+                        <td class="p-3"><strong>DHV3c</strong> (uit lokaal D106)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">09:55 - 10:15</td>
+                        <td class="p-3"><strong>DM4b</strong> (uit lokaal D103)</td>
+                        <td class="p-3"><strong>DM3b</strong> (uit lokaal D203)</td>
+                    </tr>
+                    <tr class="pauze-row text-center">
+                        <td colspan="4" class="p-3">10:15 - 10:30 OCHTENDPAUZE --- WISSEL SHIFT 1 naar 2</td>
+                    </tr>
+                    <tr><td colspan="4" class="p-2 font-bold text-gray-700 bg-gray-100">3e Lesuur (10:30 - 11:30)</td></tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">10:30 - 10:50</td>
+                        <td class="p-3"><strong>DHV1c</strong> (uit lokaal D502)</td>
+                        <td class="p-3"><strong>DH5a</strong> (uit lokaal 106)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">10:50 - 11:10</td>
+                        <td class="p-3"><strong>DHV3b</strong> (uit lokaal D102)</td>
+                        <td class="p-3"><strong>DMH2b</strong> (uit lokaal D105)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">11:10 - 11:30</td>
+                        <td class="p-3"><strong>DHV1a</strong> (uit lokaal D601)</td>
+                        <td class="p-3"><strong>ISK Klas</strong> (uit lokaal 606 & 607)</td>
+                    </tr>
+                     <tr><td colspan="4" class="p-2 font-bold text-gray-700 bg-gray-100">4e Lesuur (11:30 - 12:30)</td></tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">11:30 - 11:50</td>
+                        <td class="p-3"><strong>DMH2a</strong> (uit lokaal D203)</td>
+                        <td class="p-3"><strong>DV6a</strong> (uit lokaal 105)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">11:50 - 12:10</td>
+                        <td class="p-3"><strong>DM4a</strong> (uit lokaal D103)</td>
+                        <td class="p-3"><strong>DM3a</strong> (uit lokaal D104)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">12:10 - 12:30</td>
+                        <td class="p-3"><strong>PRO Klas 1</strong></td>
+                        <td class="p-3"><strong>PRO Klas 2</strong></td>
+                    </tr>
+                    <tr class="pauze-row text-center">
+                        <td colspan="4" class="p-3">12:30 - 13:00 GROTE PAUZE --- WISSEL SHIFT 2 naar 3</td>
+                    </tr>
+                    <tr><td colspan="4" class="p-2 font-bold text-gray-700 bg-gray-100">5e Lesuur (13:00 - 14:00)</td></tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">13:00 - 13:20</td>
+                        <td class="p-3"><strong>DMH1a</strong> (uit lokaal D502)</td>
+                        <td class="p-3"><strong>DH4b</strong> (uit lokaal 106)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">13:20 - 13:40</td>
+                        <td class="p-3"><strong>DHV2c</strong> (uit lokaal D401)</td>
+                        <td class="p-3"><strong>DHV2b</strong> (uit lokaal D603)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">13:40 - 14:00</td>
+                        <td class="p-3"><strong>DV2a</strong> (uit lokaal D609)</td>
+                        <td class="p-3"><strong>DMH2c</strong> (uit lokaal D105)</td>
+                    </tr>
+                    <tr><td colspan="4" class="p-2 font-bold text-gray-700 bg-gray-100">6e Lesuur (14:00 - 15:00)</td></tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">14:00 - 14:20</td>
+                        <td class="p-3"><strong>DMH1b</strong> (uit lokaal D601)</td>
+                        <td class="p-3"><strong>DH5b</strong> (uit lokaal 408)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">14:20 - 14:40</td>
+                        <td class="p-3"><strong>DHV2a</strong> (uit lokaal D602)</td>
+                        <td class="p-3"><strong>DV3a</strong> (uit lokaal D407)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"></td>
+                        <td class="p-3 font-mono text-sm">14:40 - 15:00</td>
+                        <td class="p-3"><strong>DHV1b</strong> (uit lokaal D104)</td>
+                        <td class="p-3"><strong>DHV3a</strong> (uit lokaal D102)</td>
+                    </tr>
+                    <tr class="pauze-row text-center">
+                        <td colspan="4" class="p-3">15:00 --- STEMBUS SLUIT --- Tellen en opruimen begint</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
